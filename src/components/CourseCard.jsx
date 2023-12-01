@@ -9,13 +9,13 @@ import { BsStar } from "react-icons/bs";
 const CourseCard = () => {
   const star = 5;
   const stars = Array.from({ length: 7 }, (_, index) => {
-    const haldNumber = index + 0.5;
+    const halfNumber = index + 0.5;
 
     return (
       <span key={index} className="text-[#ffb900] text-[.25rem] mr-1">
         {star >= index + 1 ? (
           <BsStarFill size="14px" />
-        ) : star >= haldNumber ? (
+        ) : star >= halfNumber ? (
           <BsStarHalf size="14px" />
         ) : (
           <BsStar size="14px" />
